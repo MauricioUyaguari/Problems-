@@ -36,6 +36,7 @@ def trap(nums):
                 print result
             right -= 1
     return result
+
 trap(nums)
 
 
