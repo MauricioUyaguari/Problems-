@@ -1,3 +1,43 @@
+#42 Trapping Rain Water
+#Given n non-negative nintegers representing an elevation map where the width of each bar is 1, compute how much water it is able
+#to trap after raining
+
+
+
+
+nums = [0,1,0,2,1,0,1,3,2,1,2,1]
+
+
+
+
+
+def trap(nums):
+    left = 0
+    right = len(nums) - 1
+    result = 0
+
+    left_max = 0
+    right_max = 0
+
+    while left < right:
+        if nums[left] < nums[right]:
+            if nums[left] >= left_max:
+                left_max = heigh[left]
+            else:
+                ans += (left_max - height[left])
+            left += 1
+        else:
+            if nums[right] >= right_max:
+                right_max = nums[right]
+            else:
+                ans += (right_max - height[left])
+            j -= 1
+
+
+
+
+
+
 #46 permutations
 a = [1,2,3]
 a1 = [1,2,3,4]

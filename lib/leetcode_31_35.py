@@ -34,6 +34,9 @@ def search_range(nums, target):
 nums = [1,2,5,5,5,9]
 target = 5
 
+
+
+
 def search_range(nums, target):
     left_index = extreme_insertion_index(nums, target, True)
     if left_index == len(nums) or nums[left_index] != target:
